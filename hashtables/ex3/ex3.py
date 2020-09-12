@@ -1,8 +1,28 @@
 def intersection(arrays):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+
+    cache = {}
+    result = []
+
+    # list out array in arrays
+    for array in arrays:
+
+        # list out integers in array
+        for integer in array:
+            # find out if an integer is in cache
+            if integer not in cache:
+                cache[integer] = 1
+            # increment if integer is in cache
+            else:
+                cache[integer] += 1
+
+    length = len(arrays)
+
+    # loop over cache
+    for item in list(cache.items()):
+        # see if value is equal length of the array
+        if item[1] == length:
+            # add each item into list
+            result.append(item[0])
 
     return result
 
