@@ -1,6 +1,6 @@
 def get_indices_of_item_weights(weights, length, limit):
-    cache = {}
 
+    cache = {}
     # loop through i as index in the array
     # using the value of length
     for i in range(length):
