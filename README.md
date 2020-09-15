@@ -22,12 +22,26 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
-1. Hashing functions
-2. Collision resolution
-3. Performance of basic hash table operations
-4. Load factor
-5. Automatic resizing
+1. Hashing functions<br>
+A hash function is a function that takes a group of characters called a key and maps it to a value of a certain length called a hash value or hash.
+
+2. Collision resolution<br>
+This is a technique that finds a free slot in the hash table when the home position for the record already occupied.
+
+3. Performance of basic hash table operations<br>
+No matter what size of the table the timing is always constant time 0(1) because it takes the same amount of time to search, insert and delete regardless of the size.
+
+4. Load factor<br>
+The load factor of a hash table is the number of items over the total number of slots since a hash table uses an array.
+
+5. Automatic resizing<br>
+Resizing is utilized in order to accomodated less or more data in conjunction to the amount of slots the array has.
+
 6. Various use cases for hash tables
+    - security encryption
+    - database indexing
+    - data caching
+
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
