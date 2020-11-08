@@ -17,12 +17,12 @@ def reconstruct_trip(tickets, length):
         # print(cache)
 
     # list out the cache as route
-    # starting withe the key / value of NONE / LAX
+    # starting with the key / value of NONE / LAX
     route = [cache["NONE"]]
     # print(route)
 
     # return the values that do not have the "NONE" as source
-    # and add them to the cache
+    # then add them to the cache
     while route[-1] != "NONE":
         # print(route[-1])
         route.append(cache[route[-1]])
